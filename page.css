@@ -1,0 +1,53 @@
+	* {
+		box-sizing: border-box;
+	}
+	body, html {
+		margin: 0;
+		border: 0;
+		padding: 0;
+		background: url('background.jpg');
+		background-size: cover;
+	}
+	.divSlideFade {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 50%;
+		font-size: 0;
+		margin: auto;
+	}
+	.divSlideFade .divInSlide {
+		width: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		transition: 1.5s;
+		opacity: 0;
+	}
+	.divInSlide.ativado {
+		opacity: 1;
+	}
+	.divSlideFade img {
+		width: 100%;
+	}
+	.divIndicador {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 10px;
+	}
+	.divIndicador div {
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		cursor: pointer;
+		border-radius: 50%;
+		background: transparent;
+		border: 1px solid white;
+		margin: 0px 5px;
+		transition: 1.5s;
+	}
+	.divIndicador div.ativado {
+		background: black;
+	}

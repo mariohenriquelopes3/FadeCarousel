@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="Content-Type" content="text/html" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<link href="page.css" rel="stylesheet">
+	<script type="text/javascript" src="page.js"></script>
+</head>
+<body>
+	<div class="divSlideFade">
+		<!-- slides -->
+		<div class="divInSlide ativado"><img src="foto1.jpg" /></div>
+		<div class="divInSlide"><img src="foto2.jpg" /></div>
+		<div class="divInSlide"><img src="foto3.jpg" /></div>
+
+		<!-- indicadores -->
+		<div class="divIndicador">
+			<div class="ativado" onclick="irParaSlide(0);"></div>
+			<div onclick="irParaSlide(1);"></div>
+			<div onclick="irParaSlide(2);"></div>
+		</div>
+	</div>
+</body>
+</html>
